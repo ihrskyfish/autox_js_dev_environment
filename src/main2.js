@@ -238,6 +238,7 @@ import { launch_app_interval_to_enable_alive } from "./auxliary_product/launch_a
 
 
 function js_main() {
+    toast('js_main');
     launch_app_interval_to_enable_alive()
     // setTimeout(launch_app_interval_to_enable_alive ,1);
 }
