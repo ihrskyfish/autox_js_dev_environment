@@ -228,6 +228,10 @@ test444().then((r) => {
 
 
 toast("hello worldddddddddddddddddddddddddddddddddddddddd");
-sleep(1000); 
+setTimeout(() => {
+    
+    console.log("setTimeout");
+    sleep(1000)
+}, 1); 
 
 
