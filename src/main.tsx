@@ -223,11 +223,13 @@ function main2() {
 
 main2();
 test444().then((r) => {
-  console.log("then",r);
+  console.log("then", r);
 });
 
 
 
 toast("hello worldddddddddddddddddddddddddddddddddddddddd");
+toast(process.env.VUE_APP_API_URL);
+
 
 
