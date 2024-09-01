@@ -93,7 +93,7 @@ export let runRollup = async () => {
     code = format(code, { parser: 'babel' })
 
     // 在顶部添加上  autox 的 "ui" 标志 (有界面的脚本)
-    code = '"ui";\n' + code;
+    // code = '"ui";\n' + code;
 
     if (!fs.existsSync("out")) {
         console.log("创建 out 目录");        
