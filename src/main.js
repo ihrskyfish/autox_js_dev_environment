@@ -231,8 +231,18 @@
 // toast("hello worldddddddddddddddddddddddddddddddddddddddd");
 // toast(process.env.VUE_APP_API_URL);
 
-import {  launch_app_interval_to_enable_alive} from "./auxliary_product/launch_app_interval";
+import { launch_app_interval_to_enable_alive } from "./auxliary_product/launch_app_interval";
 
 
 
-setTimeout(launch_app_interval_to_enable_alive ,1);
+
+
+function js_main() {
+    launch_app_interval_to_enable_alive()
+    // setTimeout(launch_app_interval_to_enable_alive ,1);
+}
+
+
+// export { js_main };
+// js_main();  
+// setTimeout(js_main,1) 
