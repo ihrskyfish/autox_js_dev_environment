@@ -673,15 +673,9 @@ test();
 //  gesture__click_treasure_position();
 // gesture_kill_current_app_on_the_recents_page();
 // gesture__universal_click_xCenter_manyTime_10even_y() 
-function executeAfterRandomDelay(callback) {
-    // 生成 0 到 8 小时之间的随机时间间隔（以毫秒为单位）
-    const minMilliseconds = 0;
-    const maxMilliseconds = 8 * 60 * 60 * 1000; // 8 小时
-    const randomDelay = Math.floor(Math.random() * (maxMilliseconds - minMilliseconds + 1)) + minMilliseconds;
 
-    // 使用 setTimeout 在随机时间间隔后执行回调函数
-    setTimeout(callback, randomDelay);
-}
+import { setTimeout_random } from "./myUtils2";
+
+setTimeout_random(test);
 
 
-executeAfterRandomDelay(test);
