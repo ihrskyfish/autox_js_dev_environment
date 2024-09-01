@@ -232,6 +232,8 @@
 // toast(process.env.VUE_APP_API_URL);
 
 import { launch_app_interval_to_enable_alive } from "./auxliary_product/launch_app_interval";
+import { setTimeout_random } from "./myUtils2";
+import { project_kyub } from "./my_ihr_lib";
 
 
 
@@ -239,8 +241,7 @@ import { launch_app_interval_to_enable_alive } from "./auxliary_product/launch_a
 
 function js_main() {
     toast('js_main');
-    launch_app_interval_to_enable_alive()
-    // setTimeout(launch_app_interval_to_enable_alive ,1);
+    setTimeout_random(project_kyub);
 }
 
 

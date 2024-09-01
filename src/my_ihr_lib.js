@@ -189,17 +189,17 @@ function gesture_kill_current_app_on_the_recents_page() {
             ensure_file_content(file_path, "");
         }
 
-        function __by_builtinApi_swipe(x_start, y_start, x_end, y_end, duration) {
-            duration = duration || 2000;
-            let x_start = 500;
-            let y_start = 2000;
-            // y_start = 1800;
-            let x_end = x_start - 400;
-            // y_end = 1800;
-            let y_end = y_start;
-            swipe(x_start, y_start, x_end, y_end, duration);
+        // function __by_builtinApi_swipe(x_start, y_start, x_end, y_end, duration) {
+        //     duration = duration || 2000;
+        //     let x_start = 500;
+        //     let y_start = 2000;
+        //     // y_start = 1800;
+        //     let x_end = x_start - 400;
+        //     // y_end = 1800;
+        //     let y_end = y_start;
+        //     swipe(x_start, y_start, x_end, y_end, duration);
 
-        }
+        // }
         //  __by_touch_file ();
         __by_builtinApi_create_file("/storage/emulated/0/脚本/autoTask_gesture_delete_currentApp");
 
@@ -351,10 +351,8 @@ function back_many_times() {
 
 
 
-function toast_shell(command, is_root, is_show_console_on_devices) {
-    let is_root = is_root || false;
-    let is_show_console_on_devices = is_show_console_on_devices || false;
-    let result = shell(command, is_root);
+function toast_shell(command, is_root=false, is_show_console_on_devices=false) {
+    result = shell(command, is_root);
     autojs_builtin_log(result);
     if (is_show_console_on_devices) {
         console.show();
@@ -666,7 +664,6 @@ function wrappFunction(wrapeFunction, __classFunctionDirectly) {
 
 // gesture__universal_swipe_up_in_xCenter();
 // kill_current_app();
-test();
 // kill_current_app();
 // gesture_kill_current_app_on_the_recents_page();
 // device.getAndroidId();
@@ -679,3 +676,5 @@ import { setTimeout_random } from "./myUtils2";
 setTimeout_random(test);
 
 
+
+export {project_kyub};
