@@ -458,11 +458,9 @@ function project_kyub() {
 
     }
 
-    function loop_video_10_minute(minute) {
-        minute = minute || 10;
+    function loop_video_10_minute(minute=10) {
         enter_kyub_main_page();
         sleep_certian_time(1000 * 6);
-        minute = 10;
         let currentTime = Date.now();
         while (Date.now() - currentTime < 1000 * 60 * minute) {
             __projectGesture__next_video();
