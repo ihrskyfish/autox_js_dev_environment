@@ -5,6 +5,7 @@
     "target": "ESNext",
     "outDir": "dist",
     "jsx": "preserve",
+    "allowJs": true,
     "noEmit": true,
     "strict": false,
     "strictNullChecks": true,
